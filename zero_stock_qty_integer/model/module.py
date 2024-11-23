@@ -26,21 +26,15 @@ from odoo.tools.misc import clean_context, OrderedSet, groupby
 class StockMove(models.Model):
     _inherit = 'stock.move'
 
-    quantity_int = fields.Float(
-        'Quantity Integer',store=True,
-        compute='_compute_qquantity_int')
+    quantity_int = fields.Float('Quantity Integer')
 
-    @api.depends('quantity')
-    def _compute_qquantity_int(self):
-        for line in self:
-            line.quantity_int = 0
-            if line.quantity !=0:
-                line.quantity = (int(float_round(line.quantity, precision_digits=0,precision_rounding=1, rounding_method='DOWN')))
 
     def _action_done(self, cancel_backorder=False):
         res = super(StockMove, self)._action_done(cancel_backorder=cancel_backorder)
         for move in self:
             moves_error = move.quantity_int != move.quantity
-            if moves_error:
-                raise ValidationError(_('You cannot perform the move because the Quantity Not Integer!. (Product Name: %s)', move.product_id.name))
+            if move.quantity !=0:
+                move.quantity_int = (int(float_round(move.quantity, precision_digits=0,precision_rounding=1, rounding_method='DOWN')))
+                if moves_error:
+                    raise ValidationError(_('You cannot perform the move because the Quantity Not Integer!. (Product Name: %s)', move.product_id.name))
         return res            
