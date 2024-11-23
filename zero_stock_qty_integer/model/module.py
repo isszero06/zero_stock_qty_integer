@@ -36,5 +36,5 @@ class StockMove(models.Model):
             if move.quantity !=0:
                 move.quantity_int = (int(float_round(move.quantity, precision_digits=0,precision_rounding=1, rounding_method='DOWN')))
                 if moves_error:
-                    raise ValidationError(_('You cannot perform the move because the Quantity Not Integer!. (Product Name: %s)', move.product_id.name))
+                    raise ValidationError(_('You cannot perform the move of Quantity Not Integer!.(Product: %s)', move.product_id.name))
         return res            
