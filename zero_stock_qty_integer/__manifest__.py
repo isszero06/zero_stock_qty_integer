@@ -11,11 +11,12 @@
 
 {
     "name": "Stock Move Quantity Must Integer",
-    'version': '7.0.3',
+    'version': '7.0.5',
     'category': 'Warehouse',
     "author": 'Zero Systems',
     "company": 'Zero for Information Systems',
     "website": "https://www.erpzero.com",
+    'live_test_url': 'https://youtu.be/jWzdoM7LCmw',
     "email": "sales@erpzero.com",
     "sequence": 0,
     'license': 'OPL-1',
