@@ -16,7 +16,7 @@
     "author": 'Zero Systems',
     "company": 'Zero for Information Systems',
     "website": "https://www.erpzero.com",
-    'live_test_url': 'https://youtu.be/jWzdoM7LCmw',
+    'live_test_url': 'https://youtu.be/bnf1K0Fgndw',
     "email": "sales@erpzero.com",
     "sequence": 0,
     'license': 'OPL-1',
