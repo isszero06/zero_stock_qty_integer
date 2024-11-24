@@ -25,7 +25,7 @@
         "views/view.xml",
          ],
     "depends": ['stock'],
-    "price": 1.0,
+    "price": 50.0,
     "currency": 'EUR',
     'installable': True,
     'auto_install': False,
