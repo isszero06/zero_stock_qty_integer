@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0+e-20241010\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-23 14:52+0000\n"
-"PO-Revision-Date: 2024-11-23 14:52+0000\n"
+"POT-Creation-Date: 2024-11-24 03:19+0000\n"
+"PO-Revision-Date: 2024-11-24 03:19+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,20 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: zero_stock_qty_integer
+#: model:ir.model,name:zero_stock_qty_integer.model_product_template
+msgid "Product"
+msgstr "المنتج"
+
+#. module: zero_stock_qty_integer
 #: model:ir.model,name:zero_stock_qty_integer.model_stock_move
 msgid "Stock Move"
 msgstr "حركة المخزون"
+
+#. module: zero_stock_qty_integer
+#: model:ir.model.fields,field_description:zero_stock_qty_integer.field_product_product__is_int
+#: model:ir.model.fields,field_description:zero_stock_qty_integer.field_product_template__is_int
+msgid "Stock move must integer number?"
+msgstr "في الحركة المخزنية يجب ان تكون الكمية رقم صحيح"
 
 #. module: zero_stock_qty_integer
 #. odoo-python
