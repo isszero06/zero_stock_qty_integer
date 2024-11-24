@@ -27,5 +27,5 @@ class StockMove(models.Model):
         for move in self:
             quantity_int = (int(float_round(move.quantity, precision_digits=0,precision_rounding=1, rounding_method='DOWN')))       
             if move.quantity != quantity_int:
-                raise UserError(_('You cannot perform the move of Quantity Not Integer!.(Product: %s)', move.product_id.name))
+                raise UserError(_('You cannot perform the move of Quantity Not Integer!.(Product: %s)', move.name))
         return res            
