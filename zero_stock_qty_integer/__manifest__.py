@@ -30,6 +30,6 @@
     'installable': True,
     'auto_install': False,
     "application": True,
-    'images': ['static/description/logo.PNG'],
+    'images': ['static/description/integer.jpg'],
     'pre_init_hook': 'pre_init_check',
 }
