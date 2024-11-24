@@ -22,10 +22,10 @@
     'license': 'OPL-1',
     "summary": "Stock Move Quntity Must Integer.",
     "data": [
-        # "views/view.xml",
+        "views/view.xml",
          ],
     "depends": ['stock'],
-    "price": 120.0,
+    "price": 1.0,
     "currency": 'EUR',
     'installable': True,
     'auto_install': False,
