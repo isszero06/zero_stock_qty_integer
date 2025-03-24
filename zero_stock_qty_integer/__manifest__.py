@@ -11,7 +11,7 @@
 
 {
     "name": "Stock Move Quantity Must Integer",
-    'version': '7.0.6',
+    'version': '7.0.7',
     'category': 'Warehouse',
     "author": 'Zero Systems',
     "company": 'Zero for Information Systems',
